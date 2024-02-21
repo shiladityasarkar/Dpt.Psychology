@@ -1,0 +1,8 @@
+nltk
+pandas
+scikit-learn
+transformers
+wordcloud
+numpy
+torch
+openpyxl
