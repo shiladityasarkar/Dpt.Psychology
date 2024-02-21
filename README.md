@@ -32,7 +32,9 @@
 ### How to read?
 the naming convensions are : `ci_j` means the $j^{th}$ cluster items in $i$ number of clusters where $j<=i$.
 
-the extension convernsions are : `.txt` contains the clustered responses and `.png` contains the word clouds.
+the extension convensions are : `.txt` contains the clustered responses and `.png` contains the word clouds.
+
+the directory names are pretty self explanatory.
 
 ### Also,
 Each response file contains **metadata** which holds overall information about the cluster and individual reports for each candidate's response which equivalents to a single point in that cluster.
