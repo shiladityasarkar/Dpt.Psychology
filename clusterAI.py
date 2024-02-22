@@ -10,6 +10,7 @@ from transformers import BertModel, BertTokenizer
 from sklearn.cluster import KMeans
 import numpy as np
 import torch
+import re
 
 class Generate:
 
@@ -144,6 +145,12 @@ class Generate:
             i = 0
             for essay in essays:
                 i += 1
+                match = -1
+                for _ in shila.df['Person']:
+                    if shila.df.iloc[_-1]['Text'] == essay:
+                        match = _
+                        break
+                file.write('response of candidate : '+str(match)+'\n~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
                 file.write(str(i)+'. '+ essay + '\n')
                 pos, neg = shila.posn(essay)
                 file.write('Post processing::\nPositive words are: ')
